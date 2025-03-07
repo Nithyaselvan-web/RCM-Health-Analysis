@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RCM Health Check | Veedomed</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Free RCM Health Check</h1>
+        <p>Find out how much revenue you're losing – Instantly!</p>
+        
+        <!-- Email Capture for Lead Generation -->
+        <input type="email" id="email" placeholder="Enter your email to get results" required>
+        
+        <!-- Input Fields for Calculator -->
+        <label>A/R in 90+ Days ($):</label>
+        <input type="number" id="ar90" placeholder="Enter amount">
+
+        <label>Total A/R ($):</label>
+        <input type="number" id="totalAr" placeholder="Enter amount">
+
+        <label>Average Daily Charges ($):</label>
+        <input type="number" id="dailyCharges" placeholder="Enter amount">
+
+        <label>Denied Claims:</label>
+        <input type="number" id="deniedClaims" placeholder="Enter number">
+
+        <label>Total Claims Submitted:</label>
+        <input type="number" id="totalClaims" placeholder="Enter number">
+
+        <!-- Button to Calculate Results -->
+        <button onclick="calculateRCM()">Calculate</button>
+
+        <!-- Display Results Here -->
+        <div class="result" id="results"></div>
+
+        <!-- Button to Download Report -->
+        <button onclick="downloadReport()">Download My Report</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
